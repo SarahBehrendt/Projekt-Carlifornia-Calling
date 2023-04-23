@@ -1,0 +1,62 @@
+@mixin BearSection{
+    margin-top: -30vh;
+    width:100vw;
+    padding-top: 20vh;
+    .überschrift-text{
+        display: flex;
+        justify-content: space-around;
+        height: 90vh;
+        .überschrift-bear{
+            font-family:Lora ;
+            width: 30vw;
+            padding: 20vh 0 8vh 0;
+            h6{
+                font-size: 1rem;
+                padding-bottom: 4vh;
+            }
+            h2{
+                font-size: 5rem;
+                line-height: 0.8;
+            }
+        }
+        .text-bear{
+            font-family: Lora;
+            width: 40vw;
+            padding: 15vh 0 8vh 0;
+            p{
+                font-size: 2rem;
+            }
+            h6{
+                font-size: 0.8rem;
+                padding-top: 2vh;
+            }
+        }
+    }
+    .Bear-pics{
+        height: 70vh;
+        display:flex;
+        padding-left: 20vw;
+        .big-bear{
+            width: 45vw;
+            height:80vh;
+        }
+        .Bears{
+            width:  25vw;
+            height: 50vh;
+            margin: 10vh 0 0 -5vw;
+        }
+    }
+  }
+  @mixin Btn{
+        border: 1px solid white;
+        padding: 1rem;
+        width: 8rem;
+        &:hover{
+            background-color: white;
+            color: black;
+        }
+        p{
+            font-family: WorkSans;
+            font-size: 1rem;
+        }
+    }

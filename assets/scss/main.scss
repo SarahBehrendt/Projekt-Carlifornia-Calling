@@ -1,0 +1,234 @@
+@import"header.scss";
+@import"mixin.scss";
+@import"footer.scss";
+
+@font-face {
+    font-family: Lora;
+    src: url(../fonts/Lora-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: WorkSans;
+    src: url(../fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+/* +++Basic+++ */
+
+html{
+    font-size: 62,5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* +++Main+++ */
+
+.intro-sec{
+    padding:10vh 0 10vh 7vw;
+    background-color: black;
+    color: white;
+    max-height: 210vh;
+    .text-map{
+        margin: 10vh 30vw 0 0 5vw;
+        width: 85vw;
+        p{
+            font-size: 5rem;
+            font-family: Lora;
+            font-weight: 600;
+            padding: 0 18vw 0 0;
+            position: relative;
+            z-index: 1;
+        }
+
+    }
+    .infos{
+        display: flex;
+        justify-content: space-between;
+        div{
+            margin: 10vh 25vw 19vh 0;
+            padding-top: 20vh;
+            h5{
+                font-size: 1rem;
+                font-family: Lora;
+            }
+            h3{
+                font-size: 3.3rem;
+                font-weight: 600;
+                margin-bottom: 15vh;
+                font-family: Lora;
+            }
+        }
+        img{
+            width: 50%;
+            margin-top: -45vh;
+            
+        }
+    }
+}
+
+.second-sec{
+    .first-pic{
+        display: flex;
+        justify-content: flex-end;
+        img{
+            max-width: 25vw;
+            max-height: 25vh;
+            margin: -10vh 15vw 0 0 ;
+        }
+    }
+    .pic-text{
+        display: flex;
+        justify-content: space-between;
+        height:75vh;
+        margin: 10vh 0 25vh 0;
+        .second-pic{
+            display: flex;
+            align-items: flex-start;
+            img{
+                max-width: 25vw;
+                max-height: 25vh;
+            }
+        }
+        .Stuck{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 28vw;
+            h2{
+               font-family: Lora; 
+               font-size: 4.5rem;
+            }
+            p{
+                font-weight: 550;
+                line-height: 2;
+            }
+        }
+        .third-pic{
+            display: flex;
+            align-items: flex-end;
+            img{
+                max-width: 25vw;
+                max-height: 25vh;
+            }
+        }
+    }
+}
+
+.two-pics{
+    display: flex;
+    justify-content: space-around;
+    height: 45vh;
+    margin-bottom: 20vh;
+    .fourth-pic{
+        display: flex;
+        align-items: flex-start;
+        img{
+            max-width: 30vw;
+            max-height: 30vh;
+        }
+    }
+    .fifth-pic{
+        display: flex;
+        align-items: flex-end;
+        img{
+            max-width: 30vw;
+            max-height: 30vh;
+        }
+    }
+}
+
+.pic-text2{
+    display: flex;
+    justify-content: space-between;
+    width: 65vw;
+    height: 50vh;
+    .sixth-pic{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top:-10vh;
+        img{
+            max-width: 25vw;
+            max-height: 25vh;
+        }
+    }
+    .text2{
+        display: flex;
+        justify-content: flex-start;
+        width:30vw;
+        font-weight: 550;
+        line-height: 2;
+        font-size: 1.1rem;
+    }
+}
+
+.seventh-pic{
+    display: flex;
+    justify-content: flex-end;
+    height: 40vh;
+    width: 100vw;
+    position: relative;
+    z-index: 2;
+        img{
+            max-width: 30vw;
+            max-height: 30vh;
+            margin: -10vh 15vw  0 ;
+        }
+
+}
+
+.third-section{
+    background-color: black;
+    color: white;
+    @include BearSection;
+    position: relative;
+    z-index: 1;
+}
+
+.fourth-section{
+    @include BearSection;
+    height: 250vh;
+    .circle{
+        width:25vw;
+        height: 25vh;
+        margin: -10vh 0 20vh 76vw;
+        img{
+            animation: circle 10s infinite linear;
+        }
+    }
+    .Bear-pics{
+        .Bears{
+            position: relative;
+            z-index: 1;
+        }
+        .big-bear{
+            margin-left: -4rem;
+        }
+    }
+}
+
+@keyframes circle{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes banner{
+   
+    from{
+        transform: translate(0, 0) rotate(45deg);
+    }
+    to{
+        transform: translate(150px, 150px) rotate(45deg);
+    }
+   
+}
